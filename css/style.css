@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'helvetica neue light';
+    src: url(../font/helveticaneuecyr-light-webfont.eot);
+    src: url(../font/helveticaneuecyr-light-webfont.eot?#iefix) format(embedded-opentype),
+         url(../font/helveticaneuecyr-light-webfont.woff2) format(woff2),
+         url(../font/helveticaneuecyr-light-webfont.woff) format(woff),
+         url(../font/helveticaneuecyr-light-webfont.ttf) format(truetype);
+       
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+    background: url(../img/Pattern.png);
+    font-family: 'helvetica neue light';
+}
+.box {
+    position: absolute;
+    left: 200px;
+    width: 1214px;
+    height: 1028px;
+    background: url(../img/Background.png);
+}
+.header {
+    width: 1214px;
+    height: 36px;
+    background: url(../img/panel.png) repeat-x;
+}
+.menu-1{
+    position: absolute;
+    left: 400px;
+    top: 0px;
+    color: #60B5ED;
+    text-decoration: none;
+    width: 844px; 
+    height: 36px;
+    padding: 1px;
+    font-size: 14px;
+    float: left; 
+    display: inline; 
+}
+.menu-2{
+    position: absolute;
+    left: 886px;
+    top: 0px;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 370px; 
+    height: 36px;
+    padding: 1px;
+    font-size: 14px;
+    float: left;
+    display: inline;
+}
+
+ul{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+                /*меню 1*/
+ul.menu-1 > li {
+    float: left;
+    position: relative;
+
+}
+ul.menu-1 > li > a {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    color: #60B5ED;                 /*голубой*/
+    text-decoration: none;
+}
+ul.menu-1 > li > a:hover {
+    background: url(../img/fon_Vender.png) repeat-x;
+    color: #FEFFFF;
+}
+.line {
+    margin-top: 2px;
+    margin-right: 6px;
+    width: 1px;
+    height: 30px;
+    background-color: #60B5ED;
+    float: left;
+}
+.image {
+    margin-left: 20px;
+    padding-top: 6px;
+}
+
+            /*меню 2*/
+ul.menu-2  > li {
+    float: left;
+    position: relative;
+}
+ul.menu-2 > li > a {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    color: #FFFFFF;                       /*белый*/
+    text-decoration: none;
+}    
+ul.menu-2 > li > a:hover {
+    background: url(../img/button_o.png) no-repeat;                      
+}
+
+
+ .cadastre{
+    position: absolute;
+    top: 210px;
+    left: 553px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    float: none;
+    font-size: 26px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+    height: 60px;
+    width: 560px;
+}
+.click{
+    position: absolute;
+    top: 273px;
+    left: 553px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    float: none;
+    
+    display: block;
+    height: 550px;
+    width: 560px;
+}
+    
+
+
+/*кнопка-ссылка FB*/
+.btn-fb{
+    background-image: url(../img/facebook.png);
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    width: 276px;
+    height: 35px;
+    cursor:pointer;
+}
+.btn-fb:hover{
+    box-shadow: 0 0 10px rgba(0,0,224,0.5);
+}
+.btn-fb:focus{
+     background: linear-gradient(#2F7BC5, #FFFFFF) #2F7BC5;
+}
+
+/*.txt{
+    position: absolute;
+    top: 92%;
+    margin-left: 24%;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}*/
+
+.lines {
+    padding: 0 0 0 260px;
+    position: absolute;
+    top: 100px;
+    left: 9px;
+    width: 200px;
+    color: #686c68;
+    font-size: 15px;
+    display: block;
+    overflow: hidden;
+}
+.lines > p {
+    position: relative;
+    display: inline-block;
+}
+.lines > p:before,
+.lines > p:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 123px;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #000000;
+}
+.lines > p:before {
+    right: 60%;
+    margin-right: 15px;
+}
+.lines > p:after {
+    left: 60%;
+    margin-left: 15px;
+}
+.input {
+    position: absolute;
+    top: 141px;
+    left: 138px;
+    width: 283px;
+    height: 250px;
+}
+.first,
+.last,
+.email,
+.choose-pass,
+.pass-confirm {
+    margin-bottom: 19px;
+    padding: 0 0 0 18px;
+    width: 265px;
+    height: 35px;
+    border: 0;
+    border-bottom: 1px solid #484948;
+    background-color: #100f0f;
+    font-size: 14px;
+    color: #a8a8a8;
+}
+:focus {
+    outline: none;
+    background-color: #1b5288;
+    border-bottom: 1px solid #699bcc;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: inset 0px 0px 7px 3px rgba(31,72,110,1);
+    box-shadow: 0px 0px 9px 3px rgba(64,113,144,1);
+}
+.check {
+    position: absolute;
+    top: 417px;
+    left: 135px;
+    font-size: 16px;
+    color: #a8a8a8;
+}
+.registration {
+    position: absolute;
+    top: 455px;
+    left: 210px;
+}
+.registration button {
+    width: 149px;
+    height: 33px;
+    font-size: 14px;
+    color: #ffffff;
+    border: 0;
+    border-top: 1px solid #67c6e6;
+    border-radius: 3px 3px 3px 3px;
+    background: linear-gradient(to top, #2e7ac4, #4faddb);
+}
+.license {
+    position: absolute;
+    top: 510px;
+    left: 0px;
+}
+.license p {
+    padding: 0 0 0 80px;
+    color: #afaeab;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+
+
+/*a.button-fb {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 6px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+} 
+a.button-fb:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+a.button-fb:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+}
+*/
